@@ -1,0 +1,738 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+p,
+label,
+h1,
+h2,
+h3,
+span,
+figcaption,
+figure {
+  margin: 0 !important;
+}
+
+button:focus {
+  outline: none;
+}
+
+body {
+  position: relative;
+}
+
+/* ---------------------------------- header styles */
+.header {
+  padding: 20px 0;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: none;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out,
+    visibility 0.3s ease-out;
+  z-index: 1000;
+  opacity: 0;
+}
+.header.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background: rgb(224, 221, 221);
+  gap: 10%;
+  padding: 20px;
+}
+.headerButton a {
+  background-color: #5b7687;
+  padding: 8px 30px;
+  border-radius: 8px;
+  color: #fffef8;
+}
+header a {
+  text-decoration: none;
+}
+.header__controllers {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.headerButton__link {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.headerMenu a {
+  font-weight: 600;
+  color: #597797;
+  transition: 0.4s ease-in-out;
+}
+.headerMenu a:hover {
+  color: #3e546b;
+}
+
+.mainLogo img {
+  display: block;
+  width: 124px;
+}
+.headerMenu a {
+  text-decoration: none;
+}
+.headerMenu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.upHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.upHeader a {
+  text-decoration: none;
+  color: #3e546b;
+  font-size: 20px;
+}
+.upHeader img {
+  width: 32px;
+}
+/* ------------------------- main section styles  */
+
+.main {
+  background: url("../images/slide3.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 48px;
+  color: #fbfbfb;
+  text-transform: uppercase;
+}
+
+.application {
+  background: #fffef8;
+  padding: 50px 0;
+}
+.application__menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.application__offer {
+  background: url(../images/berge.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.application__accent {
+  background: #5e8c7b;
+  padding: 5px;
+}
+
+.application__title {
+  font-size: 37px;
+  text-transform: uppercase;
+}
+
+.application__details {
+  padding: 80px;
+  border: 1px solid #4f7b6b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.application__advantage {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: #315a51;
+  font-size: 18px;
+}
+.application__advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.application__button {
+  border: none;
+  background: #4f7b6b;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  width: 90%;
+}
+
+.answer {
+  background: #fffef8;
+  padding: 50px 0;
+}
+
+.answer__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  color: #315a51;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.answer__questions {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.answer__item {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+  border-bottom: 1px solid #5e8c7b;
+  cursor: pointer;
+}
+
+.answer__item:nth-of-type(1) {
+  border-top: 1px solid #5e8c7b;
+}
+
+.answer__question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer__question-toggle {
+  border: none;
+  padding: 5px 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: none;
+  transition: 0.5s;
+}
+
+.answer__question-toggle:hover {
+  background: rgb(223, 222, 222);
+}
+
+.answer__question-toggle-active {
+  transform: rotate(45deg);
+}
+
+.answer__answer-text {
+  display: block;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-height: 0px;
+  padding-top: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.answer__item:nth-of-type(3) .answer__answer-text_hidden,
+.answer__item:nth-of-type(4) .answer__answer-text_hidden {
+  max-height: 300px;
+}
+
+.answer__answer-text_hidden {
+  max-height: 130px;
+  padding-top: 30px;
+}
+
+.answer__answer-text-list {
+  padding-left: 50px;
+}
+.answer__answer-text a {
+  color: red;
+}
+
+.why-we__header,
+.team__header {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  gap: 20px;
+  align-items: center;
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.why-we__title {
+  font-size: 46px;
+}
+.why-we__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.why-we__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  border-radius: 10px;
+  border: 1px solid #5e8c7b;
+  color: #4f7b6b;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.why-we__menu,
+.team__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.why-we__item-title {
+  text-align: end;
+  font-size: 27px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.why-we__item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.why-we__item-aside {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+}
+.why-we__item-heading {
+  font-size: 16px;
+}
+.why-we__item-number {
+  background: #4f7b6b;
+  padding: 0 8px;
+  color: #fffef8;
+  border: none;
+  border-radius: 5px;
+}
+.why-we__item-description {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.why-we__item:nth-of-type(1) {
+  color: #fffef8;
+  background: #4f7b6b;
+}
+.why-we__item:nth-of-type(1) .why-we__item-number {
+  background: #fffef8;
+  color: #4f7b6b;
+}
+
+.why-we,
+.team {
+  background: #fffef8;
+  padding: 50px 0;
+  color: #315a51;
+}
+
+.team__main {
+  display: flex;
+}
+.team-member {
+  border-radius: 10px;
+}
+
+.team__main {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.philosophien-main {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+.philosophien-main__desc {
+  font-size: 16px;
+  color: #315a51;
+}
+.philosophien-main__img {
+  width: 100%;
+}
+.philosophien-main__desc li {
+  list-style: none;
+  font-style: italic;
+}
+.team__subtitle {
+  font-weight: 300;
+}
+
+.reise-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.reise__nav,
+.tours__nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 50%;
+}
+
+.tours__nav {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.reise__nav-item {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #eeeeee;
+  color: #315a51;
+  font-weight: 300;
+  padding-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.reise__nav-item:hover {
+  border-bottom: 1px solid #315a51;
+  color: #315a51;
+  font-weight: 500;
+}
+
+.reise__content {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.reise__content-item {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #315a51;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tour-card {
+  border: 1px solid #315a51;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  padding: 20px 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: url(../images/p.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fffef8;
+}
+.tour-card:hover{
+  text-decoration: none;
+color: #fffef8;
+}
+
+
+.tour-card__title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.tour-card__button {
+  background: rgba(255, 255, 248, 0.2); /* 20% непрозрачности */
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: white;
+  border: 1px solid white;
+  backdrop-filter: blur(2px); 
+  cursor: pointer;
+}
+
+
+.tour-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.info {
+  padding: 50px 0;
+  background: #fffef8;
+  color: #315a51;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.info__menu {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  padding: 30px 60px;
+  align-items: center;
+  border: 1px solid #5e8c7b;
+  border-radius: 10px;
+}
+
+.info__image {
+  width: 100%;
+  height: 100%;
+}
+
+.info__details {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-right: 50px;
+}
+.info__text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.info__description {
+  font-size: 14px;
+  font-weight: 400;
+}
+.info__title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.main-tour {
+  padding: 50px 0;
+  background: #fffef8;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  font-size: 18px;
+  color: #315a51;
+  font-weight: 600;
+}
+.main-content__details {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.hike-info-card {
+  border: 1px solid #315a51;
+  border-radius: 10px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.hike-info-card--difficulty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 20px;
+}
+.hike-info-card__duration-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-transform: uppercase;
+}
+
+.hike-info-card__difficulty-level {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.hike-info-card__duration {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.hike-info-card__label {
+  font-size: 25px;
+}
+
+.hike-info-card__image {
+  width: 100%;
+}
+.main-content__button {
+  background: #5e8c7b;
+  border-radius: 10px;
+  padding: 15px 50px;
+  color: #fffef8;
+  border: none;
+  cursor: pointer;
+}
+.tour-item__text {
+  display: flex;
+  flex-direction: column;
+}
+.tour-item__text.answer__answer-text_hidden,
+.tour-item__text-last.answer__answer-text_hidden {
+  max-height: 1000px;
+}
+.answer__imgs {
+  padding-top: 50px;
+  display: flex;
+  gap: 20px;
+}
+.answer__img {
+  width: 500px;
+}
+
+.tour-main {
+  background: url(../images/tour-main.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+  gap: 50px;
+}
+
+.why-we__item-content-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-tour__item-title {
+  text-align: start;
+}
+.info-tour__item {
+  justify-content: flex-start;
+}
+
+.why-we__item-aside {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 90%;
+  padding-top: 50px;
+}
+.why-we__item-button {
+  border: none;
+  background: #fbfbfb;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: #4f7b6b;
+  cursor: pointer;
+}
+.why-we__item-price {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.footer {
+  background: #4f7b6b;
+  padding: 50px 0;
+  color: #fffef8;
+  font-weight: 600;
+}
+
+.footer__menu {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+}
+.footer__title {
+  font-size: 55px;
+  text-transform: uppercase;
+}
+.footer__text {
+  font-size: 25px;
+  font-weight: 400;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__button {
+  background: #40ac59;
+  color: #fffef8;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.footer__button:nth-of-type(2) {
+  background: #3e8cbd;
+}
+
+.social-media {
+  text-decoration: none;
+  color: #fffef8;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out,
+    visibility 0.3s ease-out;
+  z-index: 1000;
+  opacity: 0;
+}
+
+.social-icons.is-visible {
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
+}

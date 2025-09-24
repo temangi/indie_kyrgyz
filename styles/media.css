@@ -1,0 +1,412 @@
+@media (max-width: 480px) {
+  .info__menu {
+    grid-template-columns: 1fr;
+  }
+  .info__details {
+    align-items: center;
+    text-align: center;
+    padding-right: 0;
+  }
+  .main {
+    text-align: center;
+    gap: 20px;
+    
+  }
+  .tours__nav {
+    width: 100%;
+  }
+  .tours__nav .reise__nav-item {
+    font-size: 12px;
+  }
+  .team__subtitle {
+    font-size: 16px;
+  }
+  .tour-content {
+    width: 100%;
+    overflow: scroll;
+  }
+  .application__menu {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .application__details {
+    padding: 40px;
+    gap: 40px;
+    align-items: center;
+  }
+  .application__offer {
+    text-align: center;
+  }
+  .application__title {
+    font-size: 30px;
+  }
+  .team__header {
+    text-align: center;
+  }
+  .reise__nav {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .philosophien-main {
+    grid-template-columns: 1fr;
+  }
+  .answer__item {
+    padding: 20px 0;
+  }
+  .answer__item:nth-of-type(3) .answer__answer-text_hidden,
+  .answer__item:nth-of-type(4) .answer__answer-text_hidden {
+    max-height: 370px;
+  }
+
+  .answer__answer-text_hidden {
+    max-height: 200px;
+    padding-top: 30px;
+  }
+  .footer__menu {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .why-we__main {
+    grid-template-columns: 1fr;
+  }
+  .why-we__item-aside {
+    padding-top: 0;
+  }
+  .why-we__item {
+    padding: 20px;
+  }
+  .header__controllers {
+    display: none;
+    height: 100vh;
+  }
+  header{
+    justify-content: space-between;
+    padding: 5px 20px;
+  }
+  .header{
+    padding: 20px 0 0 0;
+  }
+  .header__controllers{
+    background: rgb(224, 221, 221);
+    border-top: 2px solid #bbbaba;
+  }
+  .upHeader {
+    display: none;
+  }
+  .headerMenu{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+  .headerButton , .headerButton__link{
+    display: inline-block;
+    width: 100%;
+  }
+  .headerButton__link{
+    padding: 15px 0 !important;
+    text-align: center;
+  }
+  .main-content__title,.answer__title{
+    text-align: center;
+    font-size: 30px;
+  }
+  .hike-info-card{
+    padding: 20px;
+    grid-template-columns: 1fr;
+    text-align: start;
+    gap: 20px;
+  }
+  .answer__imgs{
+    width: 100%;
+    overflow: scroll;
+  }
+  .why-we__item-title{
+    text-align: start;
+  }
+  .why-we__item-aside{
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .info__menu {
+    grid-template-columns: 1fr;
+  }
+  .info__details {
+    align-items: center;
+    text-align: center;
+    padding-right: 0;
+  }
+  .main {
+    text-align: center;
+    gap: 20px;
+  }
+  .tours__nav {
+    width: 100%;
+  }
+  .tours__nav .reise__nav-item {
+    font-size: 12px;
+  }
+  .team__subtitle {
+    font-size: 16px;
+  }
+  .tour-content {
+    width: 100%;
+    overflow: scroll;
+  }
+  .application__menu {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .application__details {
+    padding: 40px;
+    gap: 40px;
+    align-items: center;
+  }
+  .application__offer {
+    text-align: center;
+  }
+  .application__title {
+    font-size: 30px;
+  }
+  .team__header {
+    text-align: center;
+  }
+  .reise__nav {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .philosophien-main {
+    grid-template-columns: 1fr;
+  }
+  .answer__item {
+    padding: 20px 0;
+  }
+  .answer__item:nth-of-type(3) .answer__answer-text_hidden,
+  .answer__item:nth-of-type(4) .answer__answer-text_hidden {
+    max-height: 370px;
+  }
+
+  .answer__answer-text_hidden {
+    max-height: 200px;
+    padding-top: 30px;
+  }
+  .footer__menu {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .why-we__main {
+    grid-template-columns: 1fr;
+  }
+  .why-we__item-aside {
+    padding-top: 0;
+  }
+  .why-we__item {
+    padding: 20px;
+  }
+  .header__controllers {
+    display: none;
+    height: 100vh;
+  }
+  header{
+    justify-content: space-between;
+    padding: 5px 20px;
+  }
+  .header{
+    padding: 20px 0 0 0;
+  }
+  .header__controllers{
+    background: rgb(224, 221, 221);
+    border-top: 2px solid #bbbaba;
+  }
+  .upHeader {
+    display: none;
+  }
+  .headerMenu{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+  .headerButton , .headerButton__link{
+    display: inline-block;
+    width: 100%;
+  }
+  .headerButton__link{
+    padding: 15px 0 !important;
+    text-align: center;
+  }
+  .main-content__title,.answer__title{
+    text-align: center;
+    font-size: 30px;
+  }
+  .hike-info-card{
+    padding: 20px;
+    grid-template-columns: 1fr;
+    text-align: start;
+    gap: 20px;
+  }
+  .answer__imgs{
+    width: 100%;
+    overflow: scroll;
+  }
+  .why-we__item-title{
+    text-align: start;
+  }
+  .why-we__item-aside{
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #5e8c7b;
+}
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: #5e8c7b;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -10px;
+}
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+.hamburger--slider .hamburger-inner {
+  top: 2px;
+}
+.hamburger--slider .hamburger-inner::before {
+  top: 10px;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+}
+.hamburger--slider .hamburger-inner::after {
+  top: 20px;
+}
+
+.hamburger--slider.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+.hamburger--slider.is-active .hamburger-inner::before {
+  transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+  opacity: 0;
+}
+.hamburger--slider.is-active .hamburger-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(-90deg);
+}
+
+.hamburger {
+  display: none;
+}
+
+.header__controllers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header__nav {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.footer__nav-list {
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .hamburger {
+    display: inline-block;
+  }
+  .header__nav {
+    margin: 0;
+  }
+  .header__nav-list {
+    flex-direction: column;
+    align-items: normal;
+  }
+  .header__nav-item,
+  .header__nav-item:nth-of-type(1) {
+    padding: 30px 15px;
+  }
+
+  .header__controllers {
+    position: absolute;
+    /* top: -800%; */
+    top: 100%;
+    left: 0;
+    min-height: calc(100vh - 100px);
+    background: rgb(224, 221, 221);
+    padding: 0 15px;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 8888;
+
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+  }
+  .header__controllers.is-active {
+    /* top: 100%; */
+    visibility: visible;
+    opacity: 1;
+  }
+  .header.is-active{
+      background: rgb(224, 221, 221);
+  }
+}
