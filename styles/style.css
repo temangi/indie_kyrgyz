@@ -57,12 +57,15 @@ header {
   background: rgb(224, 221, 221);
   gap: 10%;
   padding: 20px;
+  justify-content: space-between;
 }
-.headerButton a {
+
+.headerButton p {
   background-color: #5b7687;
   padding: 8px 30px;
   border-radius: 8px;
   color: #fffef8;
+  cursor: pointer;
 }
 header a {
   text-decoration: none;
@@ -77,6 +80,28 @@ header a {
   text-transform: uppercase;
   font-weight: 600;
   text-decoration: none;
+}
+
+.tours-header {
+  position: sticky;
+}
+
+.all-tours {
+  text-decoration: none;
+  background: #5b7687;
+  padding: 10px 30px;
+  border-radius: 8px;
+  color: #fffef8;
+  font-weight: 600;
+  width: 20%;
+  text-align: center;
+}
+.all-tours:hover {
+  background: #3e546b;
+  transition: 0.4s ease-in-out;
+  text-decoration: none;
+
+  color: #fffef8;
 }
 
 .headerMenu a {
@@ -118,7 +143,7 @@ header a {
 /* ------------------------- main section styles  */
 
 .main {
-  background: url("../images/slide3.jpg");
+  background: url("../images/KYRG2719.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -437,10 +462,12 @@ header a {
 }
 
 .reise__content {
-  display: flex;
+  display: grid;
   width: 100%;
   overflow-x: auto;
   gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: scroll;
 }
 
 .reise__content-item {
@@ -453,6 +480,8 @@ header a {
   border: 1px solid #315a51;
   border-radius: 10px;
   cursor: pointer;
+  background-image: url(../images/KYRG2218.jpg);
+  background-position: center;
 }
 
 .tour-card {
@@ -471,11 +500,10 @@ header a {
   background-repeat: no-repeat;
   color: #fffef8;
 }
-.tour-card:hover{
+.tour-card:hover {
   text-decoration: none;
-color: #fffef8;
+  color: #fffef8;
 }
-
 
 .tour-card__title {
   font-size: 20px;
@@ -488,10 +516,9 @@ color: #fffef8;
   padding: 5px 10px;
   color: white;
   border: 1px solid white;
-  backdrop-filter: blur(2px); 
+  backdrop-filter: blur(2px);
   cursor: pointer;
 }
-
 
 .tour-content {
   width: 100%;
@@ -736,3 +763,99 @@ color: #fffef8;
   transform: translateY(0);
   opacity: 1;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sign-tour {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  bottom: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 100vh;
+  left: 0;
+  opacity: 1;
+  outline: none;
+  overflow-y: auto;
+  padding: 0 20px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 10000001;
+  opacity: 0;
+  visibility: hidden;
+}
+.sign-tour__content {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  color: #315a51;
+  gap: 20px;
+  width: 40%;
+  text-align: center;
+}
+
+.sign-tour__close{
+  position: absolute;
+  width: 3%;
+  top: 65px;
+  right: 25%;
+}
+
+.sign-tour__policy{
+  font-size: 12px;
+  color: #315a51;
+  font-weight: 400;
+  text-align: center;
+}
+
+.sign-tour__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 20px;
+}
+.sign-tour__input {
+  color: #315a51;
+  border: 1px solid #5e8c7b;
+  border-radius: 5px;
+  outline: none;
+  padding: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.sign-tour__input:nth-of-type(3){
+  width: 50%;
+}
+.sign-tour__input::placeholder{
+  color: #315a51;
+}
+
+.sign-tour__button{
+  background: #5e8c7b;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+    font-size: 20px;
+}
+
+.sign-tour__button:hover{
+  background: #ffffff;
+  transition: .4s;
+  color: black;
+
+}
+
