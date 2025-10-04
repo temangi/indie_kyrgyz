@@ -31,33 +31,23 @@ document.addEventListener("DOMContentLoaded", () => {
   handleScroll();
 });
 
-const tops = document.querySelectorAll(".reise__content-item");
 
-tops.forEach((topItem, index) => {
-  topItem.style.background = `url('./images/slide${index + 1}.jpg')`;
-  topItem.style.backgroundPosition = "center";
-  topItem.style.backgroundSize = "cover";
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const openButton = document.querySelector(".headerButton");
+  const closeButton = document.querySelector(".sign-tour__close");
+  const modal = document.querySelector(".sign-tour");
 
-const imgs = [
-  "./images/slide1.jpg",
-  "./images/slide2.jpg",
-  "./images/slide3.jpg",
-  "./images/slide4.jpg",
-  "./images/slide5.jpg",
-  "./images/slide6.jpg",
-  "./images/slide7.jpg",
-  "./images/slide8.jpg",
-  "./images/slide9.jpg",
-  "./images/slide10.jpg",
-  "./images/slide11.jpg",
-  "./images/slide12.jpg",
-];
+  openButton.addEventListener("click", () => {
+    modal.style.opacity = "1";
+    modal.style.visibility = "visible";
+    document.body.style.overflow = "hidden";
+    document.body.style.height = "100vh";
+  });
 
-const tours = document.querySelectorAll(".tour-card");
-
-tours.forEach((tourCard, index) => {
-  tourCard.style.background = `url('${imgs[index]}')`;
-  tourCard.style.backgroundPosition = "center";
-  tourCard.style.backgroundSize = "cover";
+  closeButton.addEventListener("click", () => {
+    modal.style.opacity = "0";
+    modal.style.visibility = "hidden";
+    document.body.style.overflow = "auto";
+    document.body.style.height = "auto";
+  });
 });
