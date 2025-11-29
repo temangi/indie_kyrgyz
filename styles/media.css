@@ -1,4 +1,29 @@
 @media (max-width: 480px) {
+.sign-tour__content{
+    width: 100% ;
+    padding: 50px 30px;
+  }
+  .sign-tour__title{
+    font-size: 24px;
+  }
+  .sign-tour__description{
+    font-size: 15px;
+  }
+  .sign-tour__input{
+    padding: 15px 10px;
+    font-size: 15px;
+  }
+  .sign-tour__close{
+    width: 8%;
+    top: 120px;
+    right: 6%;
+  }
+  .sign-tour__button{
+    font-size: 17px;
+  }
+  .sign-tour__policy{
+    font-size: 10px;
+  }
   .info__menu {
     grid-template-columns: 1fr;
   }
@@ -21,10 +46,7 @@
   .team__subtitle {
     font-size: 16px;
   }
-  .tour-content {
-    width: 100%;
-    overflow: scroll;
-  }
+  
   .application__menu {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -130,6 +152,31 @@
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  .sign-tour__content{
+    width: 100% ;
+    padding: 50px 30px;
+  }
+  .sign-tour__title{
+    font-size: 24px;
+  }
+  .sign-tour__description{
+    font-size: 15px;
+  }
+  .sign-tour__input{
+    padding: 15px 10px;
+    font-size: 15px;
+  }
+  .sign-tour__close{
+    width: 8%;
+    top: 170px;
+    right: 6%;
+  }
+  .sign-tour__button{
+    font-size: 17px;
+  }
+  .sign-tour__policy{
+    font-size: 10px;
+  }
   .info__menu {
     grid-template-columns: 1fr;
   }
@@ -146,7 +193,7 @@
     width: 100%;
   }
   .tours__nav .reise__nav-item {
-    font-size: 12px;
+    font-size: 15px;
   }
   .team__subtitle {
     font-size: 16px;
@@ -255,7 +302,7 @@
   }
   .why-we__item-aside{
     width: 100%;
-    justify-content: space-between;
+
   }
 }
 

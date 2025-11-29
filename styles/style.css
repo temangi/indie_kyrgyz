@@ -95,6 +95,7 @@ header a {
   font-weight: 600;
   width: 20%;
   text-align: center;
+  transition: .5s ease-in-out;
 }
 .all-tours:hover {
   background: #3e546b;
@@ -191,12 +192,12 @@ header a {
 }
 
 .application__details {
-  padding: 80px;
+  padding: 60px 40px;
   border: 1px solid #4f7b6b;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 40px;
 }
 
 .application__advantage {
@@ -270,7 +271,7 @@ header a {
   transition: 0.5s;
 }
 
-.answer__question-toggle:hover {
+.answer__question-toggle:hover , .answer__item:hover .answer__question-toggle{
   background: rgb(223, 222, 222);
 }
 
@@ -287,7 +288,7 @@ header a {
   max-height: 0px;
   padding-top: 0;
   overflow: hidden;
-  transition: 1s;
+  transition: .5s ease-in-out;
 }
 
 .answer__item:nth-of-type(3) .answer__answer-text_hidden,
@@ -392,17 +393,42 @@ header a {
   color: #315a51;
 }
 
-.team__main {
-  display: flex;
-}
+
 .team-member {
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .team__main {
   display: flex;
   overflow-x: auto;
   gap: 20px;
+  flex-direction: column;
+
+}
+.team-member__img{
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.team-member__info-block{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 20px;
+}
+
+.team-member__info{
+  padding: 20px;
+  background: #5b7687;
+  color: white;
+  border-radius: 10px;
+}
+
+.team-member__title{
+  font-size: 27px;
 }
 
 .philosophien-main {
@@ -437,29 +463,31 @@ header a {
 .tours__nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 50%;
+  /* width: 50%; */
 }
 
 .tours__nav {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .reise__nav-item {
   border: none;
   background: none;
-  border-bottom: 1px solid #eeeeee;
-  color: #315a51;
-  font-weight: 300;
+  border-bottom: 3px solid #eeeeee;
+  color: #a7a7a7;
+  font-weight: 600;
   padding-bottom: 20px;
   font-size: 16px;
   cursor: pointer;
   transition: 0.6s;
 }
-.reise__nav-item:hover {
-  border-bottom: 1px solid #315a51;
+.reise__nav-item:hover , .reise__nav-item.active {
+  border-bottom: 3px solid #315a51;
   color: #315a51;
   font-weight: 500;
 }
+
+
 
 .reise__content {
   display: grid;
@@ -484,12 +512,44 @@ header a {
   background-position: center;
 }
 
+.tour-card-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  text-align: center;
+  gap: 30px;
+}
+
+.tour-card__description{
+  font-size: 12px;
+  font-weight: 400;
+  color: #315a51;
+}
+
+.tour-card__title , .tour-card__duration{
+  z-index: 10;
+}
+
+.tour-card::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  border-radius: 10px;
+
+}
+
 .tour-card {
-  border: 1px solid #315a51;
+  position: relative;
   border-radius: 10px;
   cursor: pointer;
   display: flex;
-  padding: 20px 50px;
+  padding: 50px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -499,6 +559,8 @@ header a {
   background-size: cover;
   background-repeat: no-repeat;
   color: #fffef8;
+  width: 350px;
+  height: 300px;
 }
 .tour-card:hover {
   text-decoration: none;
@@ -511,20 +573,39 @@ header a {
   text-transform: uppercase;
 }
 .tour-card__button {
-  background: rgba(255, 255, 248, 0.2); /* 20% непрозрачности */
+  background: rgba(255, 255, 248, 0.2); 
   border-radius: 10px;
   padding: 5px 10px;
   color: white;
   border: 1px solid white;
   backdrop-filter: blur(2px);
   cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.tour-card__button:hover {
+  background: rgba(255, 255, 248, 0.5); 
+
 }
 
 .tour-content {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
+}
+
+.reise-main , .tour-content{
+  overflow: visible; 
+  height: auto;
+  width: 100%;
+}
+.tour-content{
+   width: 100%;
+  overflow: scroll;
+}
+
+.tour-content::-webkit-scrollbar {
+  display: none;
 }
 
 .info {
@@ -786,7 +867,7 @@ html {
   position: fixed;
   right: 0;
   top: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
   width: 100%;
   z-index: 10000001;
   opacity: 0;
@@ -802,6 +883,10 @@ html {
   gap: 20px;
   width: 40%;
   text-align: center;
+}
+
+.sign-tour__content , .sign-tour__close{
+   z-index: 10;
 }
 
 .sign-tour__close{
@@ -856,6 +941,11 @@ html {
   background: #ffffff;
   transition: .4s;
   color: black;
+}
+.sign-tour__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 
 }
-
