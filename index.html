@@ -10,17 +10,35 @@
   </head>
   <body>
     <section class="sign-tour">
-      <img src="./images/close.png" alt="close window" class="sign-tour__close">
+      <img
+        src="./images/close.png"
+        alt="close window"
+        class="sign-tour__close"
+      />
+      <div class="sign-tour__overlay"></div>
       <div class="sign-tour__content">
-        <h2>Sign Up for a Tour :</h2>
-        <p>Leave your contact information and we will contact you shortly :) </p>
+        <h2 class="sign-tour__title">Sign Up for a Tour :</h2>
+        <p class="sign-tour__description">
+          Leave your contact information and we will contact you shortly :)
+        </p>
         <form action="submit" class="sign-tour__form">
-          <input class="sign-tour__input" type="text" placeholder="What's your name?">
-          <input class="sign-tour__input" type="tel" placeholder="Your phone number">
-          <input class="sign-tour__input" placeholder="Date" type="datetime">
+          <input
+            class="sign-tour__input"
+            type="text"
+            placeholder="What's your name?"
+          />
+          <input
+            class="sign-tour__input"
+            type="tel"
+            placeholder="Your phone number"
+          />
+          <input class="sign-tour__input" placeholder="Date" type="datetime" />
           <button type="submit" class="sign-tour__button">SEND</button>
         </form>
-        <p class="sign-tour__policy">By clicking the "SEND" button, you agree to the privacy policy and consent to the processing of personal data.</p>
+        <p class="sign-tour__policy">
+          By clicking the "SEND" button, you agree to the privacy policy and
+          consent to the processing of personal data.
+        </p>
       </div>
     </section>
     <section class="header">
@@ -44,7 +62,7 @@
               </div>
 
               <div class="headerButton">
-                <p class="headerButton__link" >sign up for a tour</p>
+                <p class="headerButton__link">sign up for a tour</p>
               </div>
             </article>
             <div class="hamburger hamburger--slider">
@@ -71,30 +89,43 @@
               Kyrgyzstan, Kazakhstan & Uniq Experience
             </p>
           </article>
+          <nav class="reise__nav tours__nav">
+            <button class="reise__nav-item active">Our best tours</button>
+            <button class="reise__nav-item">Group tour 2025</button>
+          </nav>
 
           <main class="reise-main">
-            <article class="tour-content">
-              <a href="./tour.html" class="tour-card">
-                <p class="tour-card__title">озеро серебряное</p>
-                <span class="tour-card__duration">[ 1 день ]</span>
-                <button class="tour-card__button tour-card__button--primary">
-                  программа тура
-                </button>
-              </a>
-              <a href="./tour.html" class="tour-card">
-                <p class="tour-card__title">озеро серебряное</p>
-                <span class="tour-card__duration">[ 1 день ]</span>
-                <button class="tour-card__button tour-card__button--primary">
-                  программа тура
-                </button>
-              </a>
-              <a href="./tour.html" class="tour-card">
-                <p class="tour-card__title">озеро серебряное</p>
-                <span class="tour-card__duration">[ 1 день ]</span>
-                <button class="tour-card__button tour-card__button--primary">
-                  программа тура
-                </button>
-              </a>
+            <article class="reise__content tour-content">
+              <div class="tour-card-main">
+                <a href="./tour.html" class="tour-card">
+                  <p class="tour-card__title"></p>
+                  <span class="tour-card__duration"></span>
+                  <button class="tour-card__button tour-card__button--primary">
+                    tour program
+                  </button>
+                </a>
+                <p class="tour-card__description"></p>
+              </div>
+              <div class="tour-card-main">
+                <a href="./tour.html" class="tour-card">
+                  <p class="tour-card__title"></p>
+                  <span class="tour-card__duration"></span>
+                  <button class="tour-card__button tour-card__button--primary">
+                    tour program
+                  </button>
+                </a>
+                <p class="tour-card__description"></p>
+              </div>
+              <div class="tour-card-main">
+                <a href="./tour.html" class="tour-card">
+                  <p class="tour-card__title"></p>
+                  <span class="tour-card__duration"></span>
+                  <button class="tour-card__button tour-card__button--primary">
+                    tour program
+                  </button>
+                </a>
+                <p class="tour-card__description"></p>
+              </div>
             </article>
             <a class="all-tours" href="./tours.html">All tours</a>
           </main>
@@ -106,21 +137,26 @@
         <section class="info__menu">
           <article class="info__details">
             <div class="info__text-content">
-              <h1 class="info__title">4 ГОДА</h1>
+              <h1 class="info__title">Real impressions</h1>
               <p class="info__description">
-                организуем путешествия по Байкалу и Прибайкалью
+                Immerse yourself in local culture: stay in traditional yurts,
+                discover the cuisine, mountain landscapes, and the people who
+                preserve centuries-old traditions.
               </p>
             </div>
             <div class="info__text-content">
-              <h1 class="info__title">12 туров</h1>
+              <h1 class="info__title">Proven reliability</h1>
               <p class="info__description">
-                по летним направлениям и не меньше зимних
+                We've been working in tourism for over 5 years, organizing group
+                and individual trips throughout Kyrgyzstan and southern
+                Kazakhstan.
               </p>
             </div>
             <div class="info__text-content">
-              <h1 class="info__title">5к человек</h1>
+              <h1 class="info__title">Care in every step</h1>
               <p class="info__description">
-                увидели красоты Сибири вместе с нами
+                Our guides are well-versed in the locales and atmosphere, making
+                your trip easy, engaging, and as comfortable as possible.
               </p>
             </div>
           </article>
@@ -133,12 +169,11 @@
         <section class="application__menu">
           <article class="application__offer">
             <h1 class="application__title">
-              не нашли <br />
-              подходящий тур?
+              Couldn’t find <br />
+              the perfect tour?
             </h1>
             <p class="application__subtitle">
-              ОРГАНИЗУЕМ ДЛЯ ВАС
-              <span class="application__accent">ИНДИВИДУАЛЬНЫЙ ТУР</span>
+              <span class="application__accent"> LET US KNOW</span>
             </p>
           </article>
           <article class="application__details">
@@ -150,7 +185,7 @@
                   alt="check"
                 />
                 <figcaption class="application__description">
-                  Эксклюзивная программа
+                  Get a tour perfectly matched to your budget
                 </figcaption>
               </figure>
               <figure class="application__advantage">
@@ -160,7 +195,7 @@
                   alt="check"
                 />
                 <figcaption class="application__description">
-                  Подберем тур под ваш бюджет
+                  Enjoy a trip designed around your needs and preferences
                 </figcaption>
               </figure>
               <figure class="application__advantage">
@@ -170,11 +205,21 @@
                   alt="check"
                 />
                 <figcaption class="application__description">
-                  Учитываем все ваши пожелания
+                  Experience an itinerary tailored to your pace and interests
+                </figcaption>
+              </figure>
+              <figure class="application__advantage">
+                <img
+                  class="application__icon"
+                  src="./images/check.svg"
+                  alt="check"
+                />
+                <figcaption class="application__description">
+                  Add exclusive, unforgettable moments to your journey
                 </figcaption>
               </figure>
             </main>
-            <button class="application__button">оставить заявку</button>
+            <button class="application__button">Submit application</button>
           </article>
         </section>
       </div>
@@ -208,32 +253,33 @@
       <div class="container">
         <section class="team__menu philosophien__menu">
           <article class="team__header">
-            <h1 class="team__title">Что для нас путешествия?</h1>
-            <p class="team__subtitle">[ ФИЛОСОФИЯ BAIKAL TRACK ]</p>
+            <h1 class="team__title">Founding story</h1>
+            <p class="team__subtitle">[ What we believe ]</p>
           </article>
           <main class="philosophien-main">
             <img class="philosophien-main__img" src="./images/Img.svg" alt="" />
             <ul class="philosophien-main__desc">
               <li>
-                "Мы не организуем туры – мы создаём путешествия. А это намного
-                больше"
+                On of the tour days when Jack was just a guide, he and his
+                travelers were trekking to Lake Song-Kul when they stumbled upon
+                a shepherd’s yurt — completely by chance. The locals invited
+                them in, and under the bright sun by the lake, a sense of
+                friendship slowly unfolded.
               </li>
               <br />
               <li>
-                Уже 5й год наша команда делится историями и красотами Сибири с
-                другими. Но делает это по- особенному.
+                The shepherds’ children were swimming, laughter echoed
+                everywhere, and the wife of one of the travelers, watching it
+                all, quietly whispered, ‘This is one of the most touching
+                moments of my life.’ Tears glimmered in her eyes.
               </li>
               <br />
               <li>
-                Мы видим цель не в том, чтобы поставить ещё один флажок на
-                карте. Для нас важен сам путь, а не место назначения.
+                In that moment, Jack realized that his work wasn’t just about
+                tours — it was about creating real, unforgettable moments of
+                happiness for people.
               </li>
               <br />
-              <li>
-                Научиться замечать и чувствовать, отпустить контроль и ожидания,
-                довериться и просто наблюдать. И тогда ты поймешь как просто
-                быть счастливым...
-              </li>
             </ul>
           </main>
         </section>
@@ -243,29 +289,27 @@
       <div class="container">
         <section class="team__menu">
           <article class="team__header">
-            <h1 class="team__title">КОМАНДА</h1>
-            <p class="team__subtitle">
-              ЛЮДИ, КОТОРЫЕ СОЗДАЮТ НАШИ ПУТЕШЕСТВИЯ:
-            </p>
+            <h1 class="team__title">About us</h1>
+            <p class="team__subtitle">People who create our journeys:</p>
           </article>
           <main class="team__main">
             <div class="team-member">
-              <img src="./images/diana.svg" alt="" />
+              <h1 class="team-member__title">JACK / ZHAKSHYLYK</h1>
+              <article class="team-member__info-block">
+                <img src="./images/cat.jpg" alt="" class="team-member__img" />
+                <div class="team-member__info">
+                  <p class="team-member__role">Jack is the founder, guide, and content creator who showcases Kyrgyzstan through his social media blog. He personally tests every route, designs safe and well-planned tours, captures drone footage, and helps people experience the country on a deeper level. His work combines inspiration, creativity, and reliable service.</p>
+                </div>
+              </article>
             </div>
-            <div class="team-member">
-              <img src="./images/diana.svg" alt="" />
-            </div>
-            <div class="team-member">
-              <img src="./images/diana.svg" alt="" />
-            </div>
-            <div class="team-member">
-              <img src="./images/diana.svg" alt="" />
-            </div>
-            <div class="team-member">
-              <img src="./images/diana.svg" alt="" />
-            </div>
-            <div class="team-member">
-              <img src="./images/diana.svg" alt="" />
+             <div class="team-member">
+              <h1 class="team-member__title">ANUAR / ANU</h1>
+              <article class="team-member__info-block">
+                <img src="./images/cat.jpg" alt="" class="team-member__img" />
+                <div class="team-member__info">
+                  <p class="team-member__role">Anuar is a skilled guide and cultural ambassador who brings the rich heritage of Kyrgyzstan to life. With a deep knowledge of local traditions and history, he creates immersive experiences that connect travelers with the heart of the region. His passion for storytelling and commitment to sustainable tourism make him an invaluable part of the team.</p>
+                </div>
+              </article>
             </div>
           </main>
         </section>
@@ -492,10 +536,10 @@
       <div class="container">
         <section class="footer__menu">
           <article class="footer__item">
-            <h2 class="footer__title">Остались вопросы?</h2>
+            <h2 class="footer__title">Still have questions?</h2>
             <p class="footer__text">
-              Напишите нам в WhatsApp или Telegramm, мы ответим на все ваши
-              вопросы
+              Contact us on WhatsApp or Telegram, and we'll answer all your
+              questions.
             </p>
             <button class="footer__button">
               <a
@@ -512,7 +556,7 @@
           </article>
           <article class="footer__item">
             <p class="footer__text">
-              или звоните по телефону: <br />
+              or call us at: <br />
               +7 (984) 270-44-47
             </p>
           </article>

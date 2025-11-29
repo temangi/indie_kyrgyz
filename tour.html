@@ -9,26 +9,25 @@
     <link rel="stylesheet" href="./styles/media.css">
   </head>
   <body>
-     <section class="header">
+    <section class="sign-tour">
+      <img src="./images/close.png" alt="close window" class="sign-tour__close">
+      <div class="sign-tour__content">
+        <h2>Sign Up for a Tour :</h2>
+        <p>Leave your contact information and we will contact you shortly :) </p>
+        <form action="submit" class="sign-tour__form">
+          <input class="sign-tour__input" type="text" placeholder="What's your name?">
+          <input class="sign-tour__input" type="tel" placeholder="Your phone number">
+          <input class="sign-tour__input" placeholder="Date" type="datetime">
+          <button type="submit" class="sign-tour__button">SEND</button>
+        </form>
+        <p class="sign-tour__policy">By clicking the "SEND" button, you agree to the privacy policy and consent to the processing of personal data.</p>
+      </div>
+    </section>
+    <section class="header">
       <div class="container">
         <div class="headerBlock">
-          <div class="upHeader">
-            <div>
-              <a href="tel:+996704313147"> +996 (704) 313-147 </a>
-            </div>
-            <div>
-              <a href="https://wa.me/996704313147?text=Hi Jake">
-                <img src="./images/whatsapp.svg" alt="" />
-              </a>
-              <a
-                href="https://www.instagram.com/ice_jack_sparrow?igsh=MWI1cDRvOTNiYzJ3Mg=="
-              >
-                <img src="./images/instagram.svg" alt="" />
-              </a>
-            </div>
-          </div>
           <header>
-              <a href="./index.html" class="mainLogo">
+            <a href="./index.html" class="mainLogo">
               <img
                 src="https://optim.tildacdn.com/tild3264-6166-4366-a530-396138623865/-/resize/264x/-/format/webp/BAIKAL_TRACK_3.png"
                 alt=""
@@ -36,15 +35,16 @@
             </a>
             <article class="header__controllers">
               <div class="headerMenu">
-                <a href="./tour.html">Афиша туров</a>
-                <a href="">Расписание</a>
-                <a href="">О нас</a>
-                <a href="">Команда</a>
-                <a href="">FAQ</a>
-                <a href="">Контакты</a>
+                <a href="./tour.html">Tour Schedule</a>
+                <a href="./index.html#reise">Timetable</a>
+                <a href="./index.html#info">About Us</a>
+                <a href="./index.html#team">Team</a>
+                <a href="./index.html#faq">FAQ</a>
+                <a href="./index.html#footer">Contacts</a>
               </div>
+
               <div class="headerButton">
-                <a class="headerButton__link" href="">записаться в тур</a>
+                <p class="headerButton__link" >sign up for a tour</p>
               </div>
             </article>
             <div class="hamburger hamburger--slider">
@@ -394,20 +394,32 @@
         </section>
       </div>
     </section>
-    <section class="footer">
+    <section  class="footer">
       <div class="container">
         <section class="footer__menu">
           <article class="footer__item">
-            <h2 class="footer__title">Остались вопросы?</h2>
+            <h2 class="footer__title">Still have questions?</h2>
             <p class="footer__text">
-              Напишите нам в WhatsApp или Telegramm, мы ответим на все ваши
-              вопросы
+              Contact us on WhatsApp or Telegram, and we'll answer all your questions.
             </p>
-            <button class="footer__button"> WhatsApp</button>
-            <button class="footer__button"> Telegram</button>
+            <button class="footer__button">
+              <a
+                class="social-media"
+                href="https://wa.me/996704313147?text=Hi Jake"
+                >WhatsApp</a
+              >
+            </button>
+            <button class="footer__button">
+              <a class="social-media" href="https://t.me/yourtelegram"
+                >Telegram</a
+              >
+            </button>
           </article>
-           <article class="footer__item">
-            <p class="footer__text">или звоните по телефону: +7 (984) 270-44-47</p>
+          <article class="footer__item">
+            <p class="footer__text">
+              or call us at: <br />
+              +7 (984) 270-44-47
+            </p>
           </article>
         </section>
       </div>
