@@ -155,10 +155,12 @@
   .team-member__img{
     width: 100%;
   }
+    .team-member__info-block{
+    grid-template-columns: 1fr;
+  }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-  .info__menu{
+@media (min-width: 481px) and (max-width: 768px) {.info__menu{
     padding: 30px;
   }
   .sign-tour__content{
@@ -311,7 +313,6 @@
   }
   .why-we__item-aside{
     width: 100%;
-
   }
   .team-member__img{
     width: 50%;
@@ -474,19 +475,16 @@
   .all-tours{
     width: auto;
   }
-  
 }
 
 @media (min-width: 768px) and (max-width: 992px){
   .team-member__img{
     width: 90%;
   }
-  
 }
 
-@media  screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .headerMenu{
     gap: 10px;
   }
-  
 }
